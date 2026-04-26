@@ -225,9 +225,9 @@ let catCans=parseInt(localStorage.getItem('cat_cans')||'0');
 function saveCans(){localStorage.setItem('cat_cans',catCans);}
 
 // BGM
-const bgmMenu=new Audio(encodeURI('猫的舞步.mp3'));
+const bgmMenu=new Audio(encodeURI('assets/music/猫的舞步.mp3'));
 bgmMenu.loop=true;bgmMenu.volume=0.5;
-const bgmGame=new Audio(encodeURI('Montagem Miau.mp3'));
+const bgmGame=new Audio(encodeURI('assets/music/Montagem Miau.mp3'));
 bgmGame.loop=true;bgmGame.volume=0.55;
 let bgmUnlocked=false;
 const BEAT_INTERVAL=60/128;
@@ -1828,7 +1828,7 @@ drawParticles=function(ctx){
     poster.style.backgroundImage=`url(${img.src})`;
     document.getElementById('bg-blur').style.backgroundImage=`url(${img.src})`;
   };
-  img.src='cover.png';
+  img.src='assets/images/cover.png';
 
   // 最高分 + 等级初始化
   const hi=parseInt(localStorage.getItem('cat_hi_score'))||0;
